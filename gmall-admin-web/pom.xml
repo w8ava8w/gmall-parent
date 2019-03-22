@@ -12,7 +12,10 @@
 	<artifactId>gmall-admin-web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>gmall-admin-web</name>
-	<description>Demo project for Spring Boot</description>
+	<description>
+        （后台管理web-restapi层，对接前端的Vue项目）
+        [boot-web]
+	</description>
 
 	<properties>
 		<java.version>1.8</java.version>
@@ -24,17 +27,17 @@
 			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
-		<!--gmall.api-->
-		<dependency>
-			<groupId>com.atguigu.gmall</groupId>
-			<artifactId>gmall-api</artifactId>
-			<version>1.0-SNAPSHOT</version>
-		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
+		</dependency>
+
+		<!--引入gmall.api,即间接引入了dubbo和common-->
+		<dependency>
+			<groupId>com.atguigu.gmall</groupId>
+			<artifactId>gmall-api</artifactId>
+			<version>1.0-SNAPSHOT</version>
 		</dependency>
 
 
