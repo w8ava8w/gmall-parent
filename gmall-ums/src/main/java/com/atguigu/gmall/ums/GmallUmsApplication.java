@@ -9,6 +9,9 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class GmallUmsApplication {
 
 	public static void main(String[] args) {
+
+
+
 		SpringApplication.run(GmallUmsApplication.class, args);
 	}
 
